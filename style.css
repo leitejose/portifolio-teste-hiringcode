@@ -35,7 +35,6 @@ ul li{
 }
 .page_initial{
     display: flex;
-    background-color: blueviolet;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
@@ -58,7 +57,6 @@ ul li{
     max-width: 650px
 }
 .about{
-    background-color: aqua;
     display: flex;
     flex-direction: row;
     width: auto;
@@ -68,7 +66,6 @@ ul li{
 }
 .text_about{
     display: flex;
-    background-color: blue;
     flex-direction: column;
     max-width:40%;
 }
