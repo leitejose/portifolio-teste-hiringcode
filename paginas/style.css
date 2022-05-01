@@ -5,7 +5,8 @@
     padding: 0px;
     box-sizing: border-box;
 }
-header{display: flex;
+header{
+    display: flex;
     height: 70px;
     align-items: center;
     justify-content: center;
@@ -13,8 +14,6 @@ header{display: flex;
 nav{
     display: flex;
     justify-content: center;
-    
-
 }
 a{
     text-decoration: none;
@@ -30,9 +29,10 @@ ul li{
     padding: 5px 37px;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
-
-
 }
+ul li a:hover{
+        font-weight: 600;
+        }
 .page_initial{
     display: flex;
     flex-direction: row;
@@ -53,7 +53,6 @@ ul li{
     max-width: 700px;
 }
 .image_about img{
-    margin: px;
     max-width: 650px
 }
 .about{
@@ -87,6 +86,9 @@ ul li{
     border-radius: 10px;
     max-width: 300px;
 }
+.img_moremoney img:hover{
+    border: 3px solid #ffff;
+}
 .description_moremoney{
     display: flex;
     flex-direction: column;
@@ -113,9 +115,210 @@ ul li{
 }
 .image_contact img{
     max-width: 500px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    align-items: center;
+    justify-content: center;
 }
-#email,#phone,#name{
-    width: 50%;
+#phone, #name{
+    width: 34%;
+}
+#phone{
+    margin-left: 10px;
+}
+#email{
+    width: 70%;
     margin-top: 10px;
-    background-color: grey;
+    background-color: white;
+}
+.form_contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.form_contact h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+}
+.form_contact p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+}
+#email{
+    width: 500px;
+}
+button{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    width: 20%;
+    outline: none;  
+    border: none;
+    border-radius: 5px;
+    background-color: darkorange;
+}
+@media only screen and (max-width:480px) {
+    header{
+        display: flex;
+        height: 70px;
+        align-items: center;
+        justify-content: center;
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+    }
+    a{
+        text-decoration: none;
+    }
+    ul{
+        display: flex;
+        list-style: none;
+        flex-direction: row;
+        justify-items: center;
+    }
+    ul li{
+        display: flex;
+        padding: 5px 37px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+    }
+    ul li a:hover{
+            font-weight: 600;
+            }
+    .page_initial{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: auto;
+        height: 100vh;
+    }
+    .text_home p{
+        font-family: 'Poppins', sans-serif;
+    }
+    .text_home h1{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 67.5px;
+    }
+    .image_home img{
+        max-width: 400px;
+    }
+    .image_about img{
+        display: none;
+    }
+    .about{
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        height: 100vh;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .text_about{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .portfolio{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: 100vh;
+        flex-direction: column;
+        margin: 40px;
+    }
+    .proj_moremoney{
+        display: flex;                                                                                              
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .img_moremoney img{
+        border-radius: 10px;
+        max-width: 200px;
+    }
+    .img_moremoney img:hover{
+        border: 3px solid #ffff;
+    }
+    .description_moremoney{
+        display: flex;
+        flex-direction: column;
+        max-width: 200px;
+    }
+    .description_moremoney p{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        font-size: 10px;
+    }
+    .description_moremoney h2{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .portfolio h1{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 30px;
+    }
+    .Contact{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .image_contact img{
+        max-width: 200px;
+        margin-bottom: 40px;
+        margin-left: 40px;
+        align-items: center;
+        justify-content: center;
+    }
+    .form_contact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .form_contact h1{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .form_contact p{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        font-size: 10px;
+        text-align: center;
+    }
+    #email{
+        width: 200px;
+    }
+    button{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-size: 15px;
+        letter-spacing: 2px;
+        width: 20%;
+        outline: none;  
+        border: none;
+        border-radius: 5px;
+        background-color: darkorange;
+    }
+    
+
 }
