@@ -106,3 +106,17 @@ ul li{
     font-weight: 600;
     font-size: 60px;
 }
+.Contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.image_contact img{
+    max-width: 500px;
+}
+#email,#phone,#name{
+    width: 50%;
+    margin-top: 10px;
+    background-color: grey;
+}
+.form
