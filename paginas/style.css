@@ -166,7 +166,7 @@ button{
     border-radius: 5px;
     background-color: darkorange;
 }
-@media only screen and (max-width:480px) {
+@media only screen and (max-width:500px) {
     header{
         display: flex;
         height: 70px;
